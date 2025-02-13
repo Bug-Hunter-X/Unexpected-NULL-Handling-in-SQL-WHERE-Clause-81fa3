@@ -1,0 +1,3 @@
+# Unexpected NULL Handling in SQL WHERE Clause
+
+This repository demonstrates a common SQL error related to handling NULL values in `WHERE` clauses.  The provided SQL query intends to retrieve employees from the Sales department with a salary greater than 100000. However, it fails to consider the possibility of NULL salary values, which are neither greater than nor less than any other value. This leads to employees with NULL salaries being omitted from the results. The solution shows how to properly handle NULLs using the IS NULL or IS NOT NULL operators.
